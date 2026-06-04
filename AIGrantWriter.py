@@ -3,13 +3,11 @@ import streamlit as st
 from openai import OpenAI
 from dotenv import load_dotenv
 
-OPENAI_API_KEY="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"
-
 # Load environment variables
 load_dotenv()
 
 # Initialize OpenAI Client
-client = OpenAI(api_key=OPENAI_API_KEY)
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 st.set_page_config(page_title="AI Grant Writer", page_icon="✍️")
 st.title("✍️ AI Grant Proposal Writer")
