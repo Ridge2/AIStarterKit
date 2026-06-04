@@ -8,7 +8,7 @@ load_dotenv()
 
 # Initialize OpenAI Client
 ###Add your own API Key in run phase###
-#client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 st.set_page_config(page_title="AI Grant Writer", page_icon="✍️")
 st.title("✍️ AI Grant Proposal Writer")
